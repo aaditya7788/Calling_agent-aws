@@ -27,7 +27,7 @@ Calling Agent is an open-source AI voice campaign manager that connects a web fr
 1. Clone the repo:
 
 ```powershell
-git clone <your-repo-url>
+git clone https://github.com/aaditya7788/Calling_agent-aws
 cd Calling-agent
 ```
 
