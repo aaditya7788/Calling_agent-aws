@@ -22,6 +22,23 @@ const App = () => {
 
   // Restore user from localStorage (Cognito) or cookies (Google) on app load
   useEffect(() => {
+    // Check for a frontend bypass for auth (useful for screenshots/demo)
+    const BYPASS = String(import.meta.env.VITE_BYPASS_AUTH).toLowerCase() === 'true';
+    if (BYPASS) {
+      const mockUser = {
+        name: 'Demo User',
+        email: 'demo@example.com',
+        id: 'demo-cognito-id',
+        given_name: 'Demo',
+        sub: 'demo-google-sub',
+        picture: '/images/profile.png',
+      };
+      // Set user and keep auth method as 'cognito' so UI behaves consistently
+      setUser(mockUser);
+      setAuthMethod('cognito');
+      console.log('VITE_BYPASS_AUTH enabled — using mock user for demo.');
+      return;
+    }
     // Check for Cognito user first
     const cognitoUser = localStorage.getItem('user');
     const accessToken = localStorage.getItem('accessToken');
