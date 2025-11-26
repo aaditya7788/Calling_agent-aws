@@ -99,17 +99,18 @@ Enjoy building with Calling Agent! If you'd like, I can also prepare a short CON
 
 
 
+
 ### Dashboard
-![Dashboard](./screenshots/Dashboard.png)
+![Dashboard](./frontend/public/images/screenshots/dashboard.png)
 
 ### Campaigns
-![Campaigns](./screenshots/Campaign.png)
+![Campaigns](./frontend/public/images/screenshots/campaign.png)
 
 ### Call View
-![Call View](./screenshots//Call.png)
+![Call View](./frontend/public/images/screenshots/call.png)
+
+### Login
+![Login](./frontend/public/images/screenshots/login.png)
 
 ### Login / Signup
-![Login](./screenshots/Login.png)
-
-### Signup
-![Signup](./screenshots/Signup.png)
+![Signup](./frontend/public/images/screenshots/Signup.png)
