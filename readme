@@ -1,0 +1,9 @@
+#create table
+node scripts/setup-dynamodb.js
+npm run dev
+
+create cognito
+PS C:\Users\aadit\Downloads\Calling-agent\Calling-agent\server> node scripts/setup-cognito.js
+
+create s3
+node setup-s3-bucket.js

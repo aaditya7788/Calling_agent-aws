@@ -1,0 +1,9 @@
+// Example key.js showing how to export values from environment variables
+// Copy this to `server/key.js` or preferably read directly from `process.env`.
+
+export const AWS_ACCESS_KEY_ID = "your_aws_access_key_id";
+export const AWS_SECRET_ACCESS_KEY = "your_aws_secret_access_key";
+export const AWS_REGION = "ap-south-1";
+
+// NOTE: Do not commit real keys. Use `server/.env` with `dotenv` for local dev
+// and set environment variables in your deployment environment.
