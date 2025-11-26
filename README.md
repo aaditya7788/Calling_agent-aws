@@ -97,19 +97,19 @@ Enjoy building with Calling Agent! If you'd like, I can also prepare a short CON
 
 ## Screenshots
 
-Below are screenshots of the app. These are placeholders — replace the files in `frontend/public/images/screenshots/` with real captures to update the images shown here.
+
 
 ### Dashboard
-![Dashboard](./frontend/public/images/screenshots/dashboard.png)
+![Dashboard](./screenshots/Dashboard.png)
 
 ### Campaigns
-![Campaigns](./frontend/public/images/screenshots/campaign.png)
+![Campaigns](./screenshots/Campaign.png)
 
 ### Call View
-![Call View](./frontend/public/images/screenshots/call.png)
-
-### Call History
-![History](./frontend/public/images/screenshots/history.png)
+![Call View](./screenshots//Call.png)
 
 ### Login / Signup
-![Login](./frontend/public/images/screenshots/login.png)
+![Login](./screenshots/Login.png)
+
+### Signup
+![Signup](./screenshots/Signup.png)
