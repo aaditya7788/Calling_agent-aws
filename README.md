@@ -94,3 +94,22 @@ Frontend environment variables live in `frontend/.env.example` and should be pre
 - Add your preferred license file (e.g., `LICENSE`) before publishing to GitHub.
 
 Enjoy building with Calling Agent! If you'd like, I can also prepare a short CONTRIBUTING.md, a PR template, or help purge any confidential data from git history.
+
+## Screenshots
+
+Below are screenshots of the app. These are placeholders — replace the files in `frontend/public/images/screenshots/` with real captures to update the images shown here.
+
+### Dashboard
+![Dashboard](./frontend/public/images/screenshots/dashboard.png)
+
+### Campaigns
+![Campaigns](./frontend/public/images/screenshots/campaign.png)
+
+### Call View
+![Call View](./frontend/public/images/screenshots/call.png)
+
+### Call History
+![History](./frontend/public/images/screenshots/history.png)
+
+### Login / Signup
+![Login](./frontend/public/images/screenshots/login.png)
