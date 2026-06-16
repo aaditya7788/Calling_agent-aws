@@ -2,7 +2,8 @@ import { useState } from 'react';
 import axios from 'axios';
 import Logo from './Logo';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api';
+const BASE_URL = import.meta.env.VITE_BASE_URL || import.meta.env.VITE_API_URL || 'http://localhost:8080';
+const API_URL = `${BASE_URL.replace(/\/$/, '')}/api`;
 
 const AuthForm = ({ setUser }) => {
   const [authMode, setAuthMode] = useState('login'); // 'login', 'register', 'verify', 'forgot', 'reset'
