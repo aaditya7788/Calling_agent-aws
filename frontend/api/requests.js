@@ -1,6 +1,6 @@
 import axios from "axios";
   // Import environment variables
-  const BASE_URL = import.meta.env.VITE_BASE_URL;
+  const BASE_URL = import.meta.env.VITE_BASE_URL?.replace(/\/$/, '');
   console.log("Base URL:", BASE_URL);
 
 
