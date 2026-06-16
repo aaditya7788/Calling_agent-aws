@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_TOKEN });
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash-lite-preview-06-17';
 
 // Store conversations per call (keyed by callSid or sessionId)
 // Each session has: { systemPrompt: string, messages: [{user, bot}] }
@@ -28,7 +29,7 @@ export async function gemini(prompt, sessionId = 'default', isSystemPrompt = fal
       
       // Generate initial AI response based on system prompt
       const response = await ai.models.generateContent({
-        model: "gemini-2.5-flash-lite-preview-06-17",
+        model: GEMINI_MODEL,
         contents: prompt,
       });
       
@@ -51,7 +52,7 @@ export async function gemini(prompt, sessionId = 'default', isSystemPrompt = fal
 
     // Generate AI response based on the full context
     const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash-lite-preview-06-17",
+      model: GEMINI_MODEL,
       contents: fullContext,
     });
 

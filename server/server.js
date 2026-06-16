@@ -24,8 +24,11 @@ app.use(cors());
 //   credentials: true, // only if using cookies/auth
 // }));
 
-
-const allowedOrigins = ['http://localhost:5173', 'https://callingagent.aaditya78.live', 'https://32b5c7de7f9b.ngrok-free.app'];
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://callingagent.aaditya78.live',
+  process.env.PUBLIC_URL,
+].filter(Boolean);
 
 app.use(cors({
   origin: (origin, callback) => {
